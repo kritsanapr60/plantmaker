@@ -64,7 +64,7 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlFile1">URL วีดีโอ</label>
-                    <input type="text" name="vdo" class="form-control" id="vod" value="{{$data->Vdo}}" required>
+                    <input type="text" name="vdo" class="form-control" id="vod" value="{{$data->Vdo}}">
                 </div>
                 <hr>
                 <button type="submit" class="btn navbar-custom text-white">บันทึกข้อมูล</button>
