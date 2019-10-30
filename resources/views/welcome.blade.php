@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <style>
             body {
-             background-image: url('/pix/samples/bg1.gif');
+            background-image: url('/pix/samples/bg1.gif');
             }
             main {
                 margin-bottom: 200%;
@@ -76,90 +76,91 @@
             }
 
             #map {
-        height: 963px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
+                height: 1200px;  /* The height is 400 pixels */
+                width: 100%;  /* The width is the width of the web page */
+    }
         </style>
     </head>
     <body>
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-custom">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-custom">
     <img src="{{ asset('img/logo.gif') }}" alt="" width="30" height="35"> &nbsp;
     <a class="navbar-brand" href="{{ url('/') }}">UBONRATCHATHANI </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-      aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExample03">
-      <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/get/โรงเรียน') }}" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
+        <a class="nav-link" href="/get/โรงเรียน" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url('/get/องค์การบริหารส่วนตําบล')}}" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
+        <a class="nav-link" href="/get/องค์การบริหารส่วนตําบล" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href=""  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">จังหวัด</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown03">
-            <a class="dropdown-item" href="{{url('/get/อุบลราชธานี')}}">อุบลราชธานี</a>
-            <a class="dropdown-item" href="{{url('/get/ศรีสะเกษ')}}">ศรีสะเกษ</a>
-            <a class="dropdown-item" href="{{url('/get/สุรินทร์')}}">สุรินทร์</a>
-            <a class="dropdown-item" href="{{url('/get/บุรีรัมย์')}}">บุรีรัมย์</a>
-            <a class="dropdown-item" href="{{url('/get/อำนาจเจริญ')}}">อำนาจเจริญ</a>
-            <a class="dropdown-item" href="{{url('/get/ยโสธร')}}">ยโสธร</a>
-
-
-          </div>
+        <a class="nav-link dropdown-toggle" href=""  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">จังหวัด</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+            <a class="dropdown-item" href="/get/อุบลราชธานี">อุบลราชธานี</a>
+            <a class="dropdown-item" href="/get/ศรีสะเกษ">ศรีสะเกษ</a>
+            <a class="dropdown-item" href="/get/สุรินทร์">สุรินทร์</a>
+            <a class="dropdown-item" href="/get/บุรีรัมย์">บุรีรัมย์</a>
+            <a class="dropdown-item" href="/get/อำนาจเจริญ">อำนาจเจริญ</a>
+            <a class="dropdown-item" href="/get/ยโสธร">ยโสธร</a>
+        </div>
         </li>
-      </ul>
-      <form action="">
+            <button type="button" onclick="myFunction()" class="btn btn-outline-warning">เเสดงเเถบป้าย <i class="fa fa-eye" aria-hidden="true"></i></button>
+            &nbsp;
+    </ul>
+    <form action="">
         <a href="{{ route('login') }}"><button type="button" class="btn btn-warning "><i class="fa fa-user"></i> LOGIN</button></a>
-      </form>
+    </form>
     </div>
-  </nav>
+</nav>
 <!-- ================= -->
 <div class="container-fulid">
         <br><br>
-        <nav class="floating-menu">
-            <center><p><b>ข้อมูลสีเเต่ละป้าย</b></p></center>
-            <hr>
-                <table style="width:100% " text-align="center" border="2" bordercolor="white">
-                        <tr>
-                          {{-- <th>Firstname</th>
-                          <th>Lastname</th> --}}
-                        </tr>
-                        <tr>
-                          <td bgcolor="#F6D400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td>&nbsp;&nbsp; ก.2</td>
-                        </tr>
-                        <tr>
-                          <td bgcolor="#630436">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td>&nbsp;&nbsp; ก.1</td>
-                        </tr>
-                        <tr>
-                          <td bgcolor="#B65FCF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td>&nbsp;&nbsp; ป้ายพระราชทาน</td>
-                        </tr>
-                      </table>
-                      <hr>
-                      <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class='fas fa-address-card' style='font-size:19px'></i> ข้อมูลสมาชิคเเผนที่</button>
-
-                    </nav>
+        <div class="col-sm-4">
+            <nav class="floating-menu" id="myDIV">
+                <center><p><b>ข้อมูลสีเเต่ละป้าย</b></p></center>
+                <hr>
+                    <table style="width:100% " text-align="center" border="2" bordercolor="white">
+                            <tr>
+                            </tr>
+                            <tr>
+                            <td bgcolor="#F6D400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp; ก.2</td>
+                            </tr>
+                            <tr>
+                            <td bgcolor="#630436">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp; ก.1</td>
+                            </tr>
+                            <tr>
+                            <td bgcolor="#B65FCF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>&nbsp;&nbsp; ป้ายพระราชทาน</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class='fas fa-address-card' style='font-size:19px'></i> ข้อมูลสมาชิคเเผนที่</button>
+                        <hr>
+                        <center><i class="fa fa-times" aria-hidden="true" style="color: red;" data-toggle="tooltip" data-placement="bottom" title="ปิดเเถบ" onclick="myFunction()"></i></center>
+                        </nav>
+        </div>
 </div>
 
-  <div class="containe-fluid">
+<div class="containe-fluid">
     <div class="row">
-      <div class="col-md-12">
+    <div class="col-md-12">
 
             <!-- Modal -->
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">ข้อมูลสมาชิกจังหวัด</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <h5 class="modal-title" id="exampleModalLabel">ข้อมูลสมาชิกจังหวัด</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
-                                      </button>
+                                    </button>
                                     </div>
                                     <div class="modal-body">
                                         @foreach ($abts as $key=> $abt)
@@ -168,21 +169,21 @@
                                         @endforeach
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                      {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
                                     </div>
-                                  </div>
+                                </div>
                     </div>
-                  </div>
+                </div>
 
 <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">ข้อมูลสมาชิกจังหวัด</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="exampleModalLabel">ข้อมูลสมาชิกจังหวัด</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+            </button>
             </div>
             <div class="modal-body">
                 @foreach ($abts as $key=> $abt)
@@ -191,27 +192,27 @@
                 @endforeach
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
 
-      <div id="map"></div>
+<div id="map"></div>
     <script>
     function initMap(){
-      var locations = [
-      @foreach($abts as $abt)
-      ['{!! $contentStrings[$abt->Name] !!}', {{ $abt->Latitude }}, {{ $abt->Longitude }},'{{ $abt->Status }}','{{ $abt->Name }}'],
-      @endforeach
+    var locations = [
+    @foreach($abts as $abt)
+    ['{!! $contentStrings[$abt->Name] !!}', {{ $abt->Latitude }}, {{ $abt->Longitude }},'{{ $abt->Status }}','{{ $abt->Name }}'],
+    @endforeach
     ];
     var myLatlng = { lat: {{$lat}}, lng: {{$lng}} };
     var zoom = {{$zoom}}
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: zoom,
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+    zoom: zoom,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
     var infowindow = new google.maps.InfoWindow();
@@ -219,28 +220,28 @@
     var marker, i;
     // http://maps.google.com/mapfiles/ms/icons/blue-dot.png
     for (i = 0; i < locations.length; i++) {
-      if (locations[i][3] == "ป้ายพระราชทาน") {
+    if (locations[i][3] == "ป้ายพระราชทาน") {
         var urlmaker = "{{ asset('img/3.png') }}"
-      } else if(locations[i][3] == "ก.1") {
+    } else if(locations[i][3] == "ก.1") {
         var urlmaker = "{{ asset('img/2.png') }}"
-      } else if(locations[i][3] == "ก.2") {
+    } else if(locations[i][3] == "ก.2") {
         var urlmaker = "{{ asset('img/1.png') }}"
-      }
+    }
 
 
-      marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
         icon: urlmaker,
         title: locations[i][4],
-      });
+    });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
         }
-      })(marker, i));
+    })(marker, i));
     }
     }
 
@@ -254,14 +255,26 @@
     })
 
     </script>
-    <!--
-    -->
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE&callback=initMap">
     </script>
-
-      </div>
+    <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            }
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
     </div>
-  </div>
+    </div>
+</div>
 </body>
 </html>

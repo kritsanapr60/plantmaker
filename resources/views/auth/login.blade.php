@@ -19,13 +19,15 @@
     color: white;
     }
     body {
-        background-image: url('img/bg3.jpg');
+        background-image: url('img/bg4.jpg');
+        overflow-y: hidden;
     }
     /* style="background-color: #a400d6;" */
     </style>
 </head>
 <body >
 <div class="container-fluid">
+    <br><br>
         <div class="row">
             <div class="col-md-12">
                 <a href="{{ url('/') }}">&nbsp;&nbsp;<i class='fas fa-angle-double-left' style='font-size:36px'></i></a>
