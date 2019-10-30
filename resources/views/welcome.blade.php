@@ -93,7 +93,7 @@
     <div class="collapse navbar-collapse" id="navbarsExample03">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/get/โรงเรียน" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
+          <a class="nav-link" href="{{ url('/get/โรงเรียน') }}" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/get/องค์การบริหารส่วนตําบล" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
