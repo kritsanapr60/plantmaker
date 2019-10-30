@@ -23,7 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/test', 'TestController');
 Route::resource('/adduser', 'AdduserController');
 Route::resource('/', 'AbtController');
-Route::get('/index', 'AbtController@home');
 
 Route::get('/detail','AbtController@Showdetail')->name('detail');
 
