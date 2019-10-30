@@ -96,17 +96,17 @@
           <a class="nav-link" href="{{ url('/get/โรงเรียน') }}" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/get/องค์การบริหารส่วนตําบล" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
+          <a class="nav-link" href="{{url('/get/องค์การบริหารส่วนตําบล')}}" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href=""  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">จังหวัด</a>
           <div class="dropdown-menu" aria-labelledby="dropdown03">
-            <a class="dropdown-item" href="/get/อุบลราชธานี">อุบลราชธานี</a>
-            <a class="dropdown-item" href="/get/ศรีสะเกษ">ศรีสะเกษ</a>
-            <a class="dropdown-item" href="/get/สุรินทร์">สุรินทร์</a>
-            <a class="dropdown-item" href="/get/บุรีรัมย์">บุรีรัมย์</a>
-            <a class="dropdown-item" href="/get/อำนาจเจริญ">อำนาจเจริญ</a>
-            <a class="dropdown-item" href="/get/ยโสธร">ยโสธร</a>
+            <a class="dropdown-item" href="{{url('/get/อุบลราชธานี')}}">อุบลราชธานี</a>
+            <a class="dropdown-item" href="{{url('/get/ศรีสะเกษ')}}">ศรีสะเกษ</a>
+            <a class="dropdown-item" href="{{url('/get/สุรินทร์')}}">สุรินทร์</a>
+            <a class="dropdown-item" href="{{url('/get/บุรีรัมย์')}}">บุรีรัมย์</a>
+            <a class="dropdown-item" href="{{url('/get/อำนาจเจริญ')}}">อำนาจเจริญ</a>
+            <a class="dropdown-item" href="{{url('/get/ยโสธร')}}">ยโสธร</a>
 
 
           </div>
