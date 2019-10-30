@@ -24,7 +24,7 @@ Route::resource('/test', 'TestController');
 Route::resource('/adduser', 'AdduserController');
 Route::resource('/', 'AbtController');
 
-Route::resource('/map', 'AbtController@home');
+Route::get('/map', 'AbtController@home');
 
 Route::get('/detail','AbtController@Showdetail')->name('detail');
 
