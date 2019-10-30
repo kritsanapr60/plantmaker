@@ -57,7 +57,15 @@
                     <label for="exampleFormControlInput1">วันที่ได้รับรางวัล</label>
                     <input id="datepicker2" name="award_date" width="300" value="{{ $data->Award_date }}" />
                 </div>
-               
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">รูปภาพ</label>
+                    <input type="file" name="picture[]" class="form-control-file" id="exampleFormControlFile1" multiple><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">URL วีดีโอ</label>
+                    <input type="text" name="vdo" class="form-control" id="vod" value="{{$data->Vdo}}" required>
+                </div>
                 <hr>
                 <button type="submit" class="btn navbar-custom text-white">บันทึกข้อมูล</button>
 
