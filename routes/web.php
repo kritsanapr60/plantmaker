@@ -14,7 +14,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/map', function () {
-    return view('index');
+    return view('firstpage');
 });
 
 Route::get('/', function () {
