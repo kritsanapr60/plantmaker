@@ -25,7 +25,7 @@
         {{csrf_field()}}
         <div class="form-group">
           <label for="exampleFormControlInput1">ชื่อ</label>
-          <input type="text" class="form-control" id="์Name" value="{{$abt->Name}}" >
+          <input type="text" class="form-control" id="์Name" value="" >
         </div>
 
         <div class="form-group">
