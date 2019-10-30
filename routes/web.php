@@ -13,10 +13,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/map', function () {
-    return view('firstpage');
-});
-
 Route::get('/', function () {
     return view('welcome');
 });
