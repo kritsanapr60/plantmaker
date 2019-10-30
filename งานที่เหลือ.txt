@@ -1,4 +1,6 @@
 ﻿สิ่งที่เหลือ
-  1.Admin
-    2. แก้ icon บางหน้าไม่ขึ้น3
-3. front-end ให้เรียบร้อย
+   - แก้ href เป็น href="{{ url("") }}"
+   - แก้ form รูป หน้า detail.blade.php
+   - แก้หน้าเพิ่มข้อมูลช่องจังหวัด Read only
+   - Login แล้วกดกลับหน้าหลักต้องเปลี่ยนปุ่มเป็น logout
+   - clone มา แล้วแก้ DB ใน localhost และ migrate
