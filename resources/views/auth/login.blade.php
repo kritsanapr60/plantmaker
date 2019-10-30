@@ -18,9 +18,13 @@
     i{
     color: white;
     }
+    body {
+        background-image: url('img/bg3.jpg');
+    }
+    /* style="background-color: #a400d6;" */
     </style>
 </head>
-<body style="background-color: #a400d6;">
+<body >
 <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -36,7 +40,7 @@
             <div class="fadeIn first">
                 <img src="img/logo.gif" id="icon" alt="User Icon" />
             </div>
-            <br>
+
             <!-- Login Form -->
             <form method="POST" action="{{ route('login') }}">
             @csrf
