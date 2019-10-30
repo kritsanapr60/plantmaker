@@ -199,6 +199,10 @@ class AbtController extends Controller
                 'Status' => $request->get('status'),
                 'Register_date'=> date('Y-m-d',strtotime($request->get('register_date'))),
                 'Award_date' => date('Y-m-d',strtotime($request->get('award_date'))),
+                'Picture_1' => $Name_Image[0],
+                'Picture_2' => $Name_Image[1],
+                'Picture_3' => $Name_Image[2],
+                'Vdo' => $request->get('vdo'),
             ]);
         $url = '/detail/'.$Name_School;
         return redirect($url);
