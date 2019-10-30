@@ -21,7 +21,7 @@ class AbtController extends Controller
             //Queryข้อมูลให้หน้าdetail
     }
 
-    public function index()
+    public function home()
     {
         $lat = 14.9985081;
         $lng = 103.9792647;
@@ -46,8 +46,12 @@ class AbtController extends Controller
 
             $contentStrings[$abt->Name] = $resultString;
         }
-
         return view('welcome', compact('abts', 'contentString', 'contentStrings','lat','lng','zoom'));
+    }
+    public function index()
+    {
+        return view('index');
+
     }
 
     public function Querydata(Request $request,$action)
