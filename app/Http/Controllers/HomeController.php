@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $usr = auth()->user()->name;
         $data = Abt::where('Name','=',$usr)->get()[0];
-        dd($data);
+        return view('home',compact('data') );
         // return view('auth.login');
         // return view('home');
     }
