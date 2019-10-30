@@ -72,7 +72,7 @@
             </center>
 
 
-        <img src="img/index2.png"  alt="index" width="60%" height="600">
+        <img src="img/index2.png" class="img-fluid" alt="index" width="60%" height="600">
         <br>
         <br>
         <center><a href="{{ url('/map') }}"><button type="button" class="btn btn-outline-warning" data-toggle="tooltip" data-placement="right" title="Visit website">เข้าสู่เว็บไซต์ <i class="fa fa-sign-in" aria-hidden="true"></i></button></a></center>
