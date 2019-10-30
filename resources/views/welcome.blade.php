@@ -263,17 +263,5 @@
       </div>
     </div>
   </div>
-
-
-<!-- ========================= -->
-  <div class="footer">
-    <br>
-    <p>
-      Marker Google maps API &copy; 2019 Copyright.
-      <br>
-      Crate by Computer science student UbonRatchathani University.
-      <hr width="35%">
-    </p>
-  </div>
 </body>
 </html>
