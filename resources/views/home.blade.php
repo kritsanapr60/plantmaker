@@ -53,6 +53,7 @@
         </div>
     </div>
 </div>
+<p>{{ $data }}</p>
 <br>
 <br>
 <br>
