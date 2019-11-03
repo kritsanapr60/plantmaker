@@ -270,7 +270,7 @@
     </div>
 
 <div id="map"></div>
-    <script  async defer >
+    <script >
     function initMap(){
     var locations = [
     @foreach($abts as $abt)
@@ -323,11 +323,11 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-  
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE&callback=initMap">
-  
   </script>
-    
+      
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE&callback=initMap">
+    </script>
     <script>
             function myFunction() {
             var x = document.getElementById("myDIV");
