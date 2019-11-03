@@ -28,8 +28,7 @@ class AbtController extends Controller
         $zoom = 9;
 
         $abts = Abt::all();
-        $contentString = '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
-        '<div id="content" class="from group row">'.
+        $contentString = '<div id="content" class="from group row">'.
         '<div id="bodyContent" class="col-md-8">'.
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
