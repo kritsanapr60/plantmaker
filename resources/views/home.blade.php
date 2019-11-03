@@ -44,7 +44,7 @@
                     <label for="exampleFormControlFile1">รูปภาพ </label>
                     <input type="file" name="picture[]" class="form-control-file" id="exampleFormControlFile1" multiple>
                     <hr width="250" align="left">
-                    <p style="color: red;">** เลือกได้ทั้งหมด 10 ภาพพร้อมๆกัน **</p>
+                    <p style="color: red;">** เลือกได้ทั้งหมด 10 ภาพพร้อมๆกันน่ะจ๊ะ **</p>
 
                 </div>
 
