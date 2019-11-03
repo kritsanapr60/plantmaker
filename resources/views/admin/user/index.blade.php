@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+ #button{
+    height:200px;
+    width:200px;
+}</style>
     <div class="container">
         <div class="row">
             @include('admin.sidebar')
@@ -39,8 +44,8 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td><td>{{ $item->username }}</td>
                                         <td>
-                                            <a href="{{ url('/admin/user/' . $item->id) }}" title="View user"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/admin/user/' . $item->id . '/edit') }}" title="Edit user"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ url('/admin/user/' . $item->id) }}" title="View user"><button class="btn btn-info btn-sm" style="width:62px"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/admin/user/' . $item->id . '/edit') }}" title="Edit user"><button class="btn btn-primary btn-sm" style="width:62px"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
                                             {!! Form::open([
                                                 'method'=>'DELETE',
                                                 'url' => ['/admin/user', $item->id],
@@ -50,7 +55,9 @@
                                                         'type' => 'submit',
                                                         'class' => 'btn btn-danger btn-sm',
                                                         'title' => 'Delete user',
-                                                        'onclick'=>'return confirm("Confirm delete?")'
+                                                        'onclick'=>'return confirm("Confirm delete?")',
+                                                        'style'=>"width:62px"
+                                                    
                                                 )) !!}
                                             {!! Form::close() !!}
                                         </td>
@@ -66,5 +73,4 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br>
 @endsection
