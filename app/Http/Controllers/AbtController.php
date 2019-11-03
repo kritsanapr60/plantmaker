@@ -36,7 +36,7 @@ class AbtController extends Controller
                 'ระดับ [status] </b></p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-4">'.
-                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="100" width="100">'.
+                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="480" width="720">'.
             '</div>'.
         '</div>';
         
