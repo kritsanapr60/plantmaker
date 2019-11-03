@@ -51,7 +51,7 @@
             text-align: center;
             position: absolute;
         }
-        imgsize{
+        .imgsize{
             width: 1280px;
             height: 583px;
         }
