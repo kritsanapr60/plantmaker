@@ -49,7 +49,7 @@
             background-color: #a400d6;
             color: white;
             text-align: center;
-            position: absolute;
+            position: fixed;
 
 
         }
