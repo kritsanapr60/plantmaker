@@ -340,7 +340,7 @@
 document.write(unescape("%20%3Cscript%20async%20defer%20src%3D%22https%3A//maps.googleapis.com/maps/api/js%3Fkey%3DAIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE%26callback%3DinitMap%22%3E%3C/script%3E"));
 </script>
     
-
+<script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
