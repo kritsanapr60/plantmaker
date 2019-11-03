@@ -104,6 +104,7 @@ class AbtController extends Controller
             $resultString = str_replace('[address]', "$abt->Address", $resultString);
             $resultString = str_replace('[province]', "$abt->Province", $resultString);
             $resultString = str_replace('[status]', "$abt->Status", $resultString);
+            $resultString = str_replace('[nimg]', "$abt->Picture_1", $resultString);
 
             $contentStrings[$abt->Name] = $resultString;
         }
