@@ -34,8 +34,8 @@ class AbtController extends Controller
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
         '</div>'.
-        '<div class="col-md-5">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
-        '</div>'.
+        '</div>'.  
+        '<div class="form-group col-md-5">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
         '</div>';
 
         $contentStrings = [];
