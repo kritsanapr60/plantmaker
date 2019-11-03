@@ -207,7 +207,7 @@
                             </tr>
                         </table>
                         <br>
-                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class='fas fa-address-card' style='font-size:19px'></i> ข้อมูลสมาชิคเเผนที่</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class='fas fa-address-card' style='font-size:19px'></i> ข้อมูลสมาชิกเเผนที่</button>
                         <hr>
                         <center><i class="fa fa-times" aria-hidden="true" style="color: red;" data-toggle="tooltip" data-placement="bottom" title="ปิดเเถบ" onclick="myFunction()"></i></center>
                         </nav>
