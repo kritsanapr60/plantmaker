@@ -191,7 +191,7 @@ class AbtController extends Controller
             $Name_Image[1] = "";
             $Name_Image[2] = "";
         }
-        \DB::table('Abt')
+        \DB::table('abt')
             ->where('name',$Name_School)
             ->update([
                 'Address' => $request->get('address'),
