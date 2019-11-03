@@ -52,8 +52,8 @@
             position: absolute;
         }
         .imgsize{
-            width: 1280px;
-            height: 583px;
+            width: 720px;
+            height: 480px;
         }
     </style>
 </head>
