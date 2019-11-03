@@ -96,20 +96,20 @@
           <a class="nav-link" href="{{ asset('/') }}">หน้าเเรก <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/get/โรงเรียน" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
+        <a class="nav-link" href="{{ url('/get/โรงเรียน') }}" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/get/องค์การบริหารส่วนตําบล" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
+        <a class="nav-link" href="{{ url('/get/องค์การบริหารส่วนตําบล') }}" id="dropdown03"  aria-expanded="false">องค์การบริหารส่วนตําบล</a>
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href=""  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">จังหวัด</a>
         <div class="dropdown-menu" aria-labelledby="dropdown03">
-            <a class="dropdown-item" href="/get/อุบลราชธานี">อุบลราชธานี</a>
-            <a class="dropdown-item" href="/get/ศรีสะเกษ">ศรีสะเกษ</a>
-            <a class="dropdown-item" href="/get/สุรินทร์">สุรินทร์</a>
-            <a class="dropdown-item" href="/get/บุรีรัมย์">บุรีรัมย์</a>
-            <a class="dropdown-item" href="/get/อำนาจเจริญ">อำนาจเจริญ</a>
-            <a class="dropdown-item" href="/get/ยโสธร">ยโสธร</a>
+            <a class="dropdown-item" href="{{ url('/get/อุบลราชธานี') }}">อุบลราชธานี</a>
+            <a class="dropdown-item" href="{{ url('/get/ศรีสะเกษ') }}">ศรีสะเกษ</a>
+            <a class="dropdown-item" href="{{ url('/get/สุรินทร์') }}">สุรินทร์</a>
+            <a class="dropdown-item" href="{{ url('/get/บุรีรัมย์') }}">บุรีรัมย์</a>
+            <a class="dropdown-item" href="{{ url('/get/อำนาจเจริญ') }}">อำนาจเจริญ</a>
+            <a class="dropdown-item" href="{{ url('/get/ยโสธร') }}">ยโสธร</a>
         </div>
         </li>
             <button type="button" onclick="myFunction()" class="btn btn-outline-warning">เเสดงเเถบป้าย <i class="fa fa-eye" aria-hidden="true"></i></button>
@@ -117,7 +117,7 @@
 
             <form class="form-inline my-2 my-lg-0">
                 @guest
-                    <a href="/login" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
+                    <a href="{{ url('/login') }}" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
                         @if (Route::has('register'))
 
                         @endif
