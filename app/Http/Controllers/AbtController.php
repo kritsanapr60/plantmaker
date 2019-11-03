@@ -30,11 +30,11 @@ class AbtController extends Controller
         $abts = Abt::all();
         $contentString = '<div id="content" class="from group row">'.
         '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
-        '<div id="bodyContent" class="col-md-6">'.
+        '<div id="bodyContent" class="col-md-8">'.
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
         '</div>'.  
-        '<div class="col-md-6">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
+        '<div class="col-md-4">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
         '</div>'.
         '</div>';
 
