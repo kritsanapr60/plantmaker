@@ -190,6 +190,13 @@ class AbtController extends Controller
             $Name_Image[0] = "";
             $Name_Image[1] = "";
             $Name_Image[2] = "";
+            $Name_Image[3] = "";
+            $Name_Image[4] = "";
+            $Name_Image[5] = "";
+            $Name_Image[6] = "";
+            $Name_Image[7] = "";
+            $Name_Image[8] = "";
+            $Name_Image[9] = "";
         }
         \DB::table('abt')
             ->where('name',$Name_School)
@@ -202,6 +209,13 @@ class AbtController extends Controller
                 'Picture_1' => $Name_Image[0],
                 'Picture_2' => $Name_Image[1],
                 'Picture_3' => $Name_Image[2],
+                'Picture_4' => $Name_Image[3],
+                'Picture_5' => $Name_Image[4],
+                'Picture_6' => $Name_Image[5],
+                'Picture_7' => $Name_Image[6],
+                'Picture_8' => $Name_Image[7],
+                'Picture_9' => $Name_Image[8],
+                'Picture_10' => $Name_Image[9],
                 'Vdo' => $request->get('vdo'),
             ]);
         $url = '/detail/'.$Name_School;
