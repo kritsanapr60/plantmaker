@@ -49,7 +49,8 @@
             background-color: #a400d6;
             color: white;
             text-align: center;
-            position: fixed;
+            position: relative;
+            margin-top: -150px;
 
 
         }
