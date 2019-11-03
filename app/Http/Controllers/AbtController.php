@@ -33,7 +33,7 @@ class AbtController extends Controller
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
         '</div>'.  
-        '<div class="col-md-4">'.'<img src="{{ asset('image_school/img_'.$data->Name.'_0.jpg') }}" alt="Smiley face" width="42" height="42">'.
+        '<div class="col-md-4">'.'<img src="{{ asset('image_school/img_[nimg]_0.jpg') }}" alt="Smiley face" width="42" height="42">'.
         '</div>'.
         '</div>';
 
@@ -44,6 +44,7 @@ class AbtController extends Controller
             $resultString = str_replace('[address]', "$abt->Address", $resultString);
             $resultString = str_replace('[province]', "$abt->Province", $resultString);
             $resultString = str_replace('[status]', "$abt->Status", $resultString);
+            $resultString = str_replace('[nimg]', "$abt->Picture_1", $resultString);
 
             $contentStrings[$abt->Name] = $resultString;
         }
