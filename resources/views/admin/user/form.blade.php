@@ -1,3 +1,4 @@
+  
 <div class="form-group {{ $errors->has('name') ? 'has-error' : ''}}">
     {!! Form::label('name', 'Name', ['class' => 'control-label']) !!}
     {!! Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
@@ -18,6 +19,13 @@
     {!! Form::select('roles',Spatie\Permission\Models\Role::get()->pluck('name','name') ,isset($user)?$user->getRoleNames():null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
     {!! $errors->first('roles', '<p class="help-block">:message</p>') !!}
 </div>
+
+
+<div class="form-group">
+    {!! Form::submit($formMode === 'edit' ? 'Update' : 'Create', ['class' => 'btn btn-primary']) !!}
+</div>
+
+
 {{-- {{ $data }} --}}
 <div class="container">
     <div class="card border-navbar-custom mb-3" style="max-width: 90rem;">
@@ -27,7 +35,7 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ชื่อ</label>
-                    <input type="text" name="name" class="form-control" id="schoolname" placeholder="{{ $data->Name }}" required>
+                    <input type="text" name="name" class="form-control" id="schoolname" value="{{ $data->Name }}" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ที่อยู่</label>
@@ -71,7 +79,6 @@
                 <button type="submit" class="btn navbar-custom text-white"><i class="fas fa-share-square"></i> บันทึกข้อมูล </button>
                 <button type="reset" class="btn btn-warning"><i class="fas fa-trash-restore-alt"></i> รีเซต </button>
 
-                <a href="{{ asset('/map') }}"><button type="button" class="btn btn-danger float-right"><i class="fas fa-share-square"></i>  ยกเลิก</button></a>
             </form>
         </div>
     </div>
@@ -84,16 +91,10 @@
     $('#datepicker').datepicker({
         uiLibrary: 'bootstrap4'
     });
-
     $('#datepicker2').datepicker({
         uiLibrary: 'bootstrap4'
     });
-
     $('.close').click(function() {
         $('.alert').hide();
     })
 </script>
-
-<div class="form-group">
-    {!! Form::submit($formMode === 'edit' ? 'Update' : 'Create', ['class' => 'btn btn-primary']) !!}
-</div>
