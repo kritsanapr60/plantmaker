@@ -204,7 +204,7 @@ class AbtController extends Controller
                 'Picture_3' => $Name_Image[2],
                 'Vdo' => $request->get('vdo'),
             ]);
-        $url = '/~plant/plantmaker/public/detail/'.$Name_School;
+        $url = '/detail/'.$Name_School;
         return redirect($url);
     }
 
