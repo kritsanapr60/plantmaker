@@ -35,8 +35,8 @@ class AbtController extends Controller
                 '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
                 'ระดับ [status] </b></p>'.
             '</div>'.
-            '<div id="bodyContent" class="col-md-6">'.
-                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="200" width="150">'.
+            '<div id="bodyContent" class="col-md-4">'.
+                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="150" width="150">'.
             '</div>'.
         '</div>';
         
