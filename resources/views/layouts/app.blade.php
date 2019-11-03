@@ -45,12 +45,11 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 110px;
+            height: 100px;
             background-color: #a400d6;
             color: white;
             text-align: center;
-            position: relative;
-            margin-top: -100px;
+            /* position: absolute; */
 
 
         }
@@ -85,9 +84,16 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ url('/home') }}">
-                                        <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
-                                     </a>
+                                @if (Auth::user()->hasRole('super-admin')) 
+                             <a class="dropdown-item" href="{{ asset('admin/user') }}">
+                                    <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
+                                 </a>
+
+                            @else 
+                                <a class="dropdown-item" href="{{ asset('/home') }}">
+                                    <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
+                                 </a>
+                                 @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
