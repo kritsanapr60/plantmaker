@@ -21,6 +21,12 @@
     body {
         background-image: url('img/bg4.jpg');
         overflow-y: hidden;
+        height: 100%;
+
+     
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;   
     }
     /* style="background-color: #a400d6;" */
     </style>
