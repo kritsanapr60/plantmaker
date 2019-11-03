@@ -83,7 +83,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::findOrFail($id);
-        $data = Abt::findOrFail($id);
+        $data = Abt::where('Name','=',$user->name)->get()[0];
         return view('admin.user.edit', compact('user','data'));
     }
 
