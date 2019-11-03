@@ -81,7 +81,7 @@ class AbtController extends Controller
             $abts = Abt::where('Province','=',$action)->get();
         }
         $contentString = '<div id="content" class="form-group col-md-12">'.
-        '<a href="/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
+        '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
         '<div id="bodyContent" class="col">'.
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
