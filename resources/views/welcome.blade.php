@@ -84,14 +84,17 @@
     <body>
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-custom">
     <img src="{{ asset('img/logo.gif') }}" alt="" width="30" height="35"> &nbsp;
-    <a class="navbar-brand" href="{{ url('/') }}">UBONRATCHATHANI </a>
+    <a class="navbar-brand" href="{{ url('/map') }}">UBONRATCHATHANI </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
     aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExample03">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ asset('/') }}">หน้าเเรก <span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item">
         <a class="nav-link" href="/get/โรงเรียน" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
@@ -111,10 +114,73 @@
         </li>
             <button type="button" onclick="myFunction()" class="btn btn-outline-warning">เเสดงเเถบป้าย <i class="fa fa-eye" aria-hidden="true"></i></button>
             &nbsp;
-    </ul>
-    <form action="">
+
+            <form class="form-inline my-2 my-lg-0">
+                @guest
+                    <a href="/login" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
+                        @if (Route::has('register'))
+
+                        @endif
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ asset('/home') }}">
+                                    <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
+                                 </a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                   <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                    {{-- ------- --}}
+                    @guest
+                    <a href="/login" class="btn btn-warning float-right" type="buton" style="display: none;"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li> --}}
+                        @if (Route::has('register'))
+                            {{-- <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li> --}}
+                        @endif
+                    @else
+                        {{-- <li class="nav-item dropdown"> --}}
+
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" style="display: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="display: none;">
+
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        {{-- </li> --}}
+                    @endguest
+            </form>
+        </ul>
+
+    {{-- <form action="">
         <a href="{{ route('login') }}"><button type="button" class="btn btn-warning "><i class="fa fa-user"></i> LOGIN</button></a>
-    </form>
+    </form> --}}
     </div>
 </nav>
 <!-- ================= -->
@@ -273,6 +339,7 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+
     </div>
     </div>
 </div>

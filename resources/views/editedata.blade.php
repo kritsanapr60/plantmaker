@@ -32,14 +32,17 @@
             <label for="exampleFormControlInput1">ที่อยู่</label>
             <input type="text" class="form-control" id="Address" placeholder="">
         </div>
+
         <label for="exampleFormControlInput1">จังหวัด</label>
+        <input class="form-control" type="text" placeholder="{{ $data->Province }}" readonly>
+        {{-- <label for="exampleFormControlInput1">จังหวัด</label>
         <select class="form-control" id="Province" name="Province">
             <option>อุบลราชธานี</option>
             <option>บุนีรัมย์</option>
             <option>ศรีสะเกษ</option>
             <option>สุรินทร์</option>
             <option>ยโสธร</option>
-        </select>
+        </select> --}}
         <br>
         <label for="exampleFormControlInput1">สถานะ</label>
         <select class="form-control" name="Status" id='Status'>

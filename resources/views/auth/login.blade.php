@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login - Pag</title>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -30,7 +30,7 @@
     <br><br>
         <div class="row">
             <div class="col-md-12">
-                <a href="{{ url('/') }}">&nbsp;&nbsp;<i class='fas fa-angle-double-left' style='font-size:36px'></i></a>
+                <a href="{{ url('/map') }}">&nbsp;&nbsp;<i class='fas fa-angle-double-left' style='font-size:36px'></i></a>
             </div>
         </div>
     </div>

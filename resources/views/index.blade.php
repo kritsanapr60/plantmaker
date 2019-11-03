@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Map API</title>
 
+    <link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -75,7 +76,7 @@
         <img src="img/index2.png" class="img-fluid" alt="index" width="60%" height="600">
         <br>
         <br>
-        <center><a href="{{ url('/map') }}"><button type="button" class="btn btn-outline-warning" data-toggle="tooltip" data-placement="right" title="Visit website">เข้าสู่เว็บไซต์ <i class="fa fa-sign-in" aria-hidden="true"></i></button></a></center>
+        <center><a href="{{ asset('/map') }}"><button type="button" class="btn btn-outline-warning" data-toggle="tooltip" data-placement="right" title="Visit website">เข้าสู่เว็บไซต์ <i class="fa fa-sign-in" aria-hidden="true"></i></button></a></center>
     </div>
     {{-- <center><a href="/index"><button type="button" class="btn btn-outline-warning" data-toggle="tooltip" data-placement="right" title="Visit website">เข้าสู่เว็บไซต์ <i class="fa fa-sign-in" aria-hidden="true"></i></button></a></center> --}}
 
