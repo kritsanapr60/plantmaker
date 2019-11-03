@@ -326,7 +326,7 @@
   </script>
       
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE&callback=initMap">
+    src="{{ URL::asset('apikey.js') }}">
     </script>
     <script>
             function myFunction() {
