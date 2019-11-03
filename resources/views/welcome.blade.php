@@ -270,7 +270,7 @@
     </div>
 
 <div id="map"></div>
-    <script>
+    <script  async defer >
     function initMap(){
     var locations = [
     @foreach($abts as $abt)
@@ -323,9 +323,10 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-
-    </script>
-    <link href="{{ URL::asset('js/googlemap.js') }}" />
+  
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxAxM_f64MaGCNie0y3joCJmUUA_TRZE&callback=initMap">
+  
+  </script>
     
     <script>
             function myFunction() {
