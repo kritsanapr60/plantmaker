@@ -25,7 +25,6 @@
     {!! Form::submit($formMode === 'edit' ? 'Update' : 'Create', ['class' => 'btn btn-primary']) !!}
 </div>
 
-
 {{-- {{ $data }} --}}
 <div class="container">
     <div class="card border-navbar-custom mb-3" style="max-width: 90rem;">
@@ -39,29 +38,27 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ที่อยู่</label>
-                    <input type="text" name="address" class="form-control" id="address" value="" required>
+                    <input type="text" name="address" class="form-control" id="address" value="{{ $data->Address }}" required>
                 </div>
 
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">จังหวัด</label>
-                    <input class="form-control" type="text" placeholder="{{ $data->Province }}" readonly>
-                    {{-- <select class="form-control" name="province" id="exampleFormControlSelect1">
-                    </select> --}}
-
+                    <input class="form-control" type="text" value="{{ $data->Province }}" readonly>
                 </div>
+                
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ระดับ</label>
-                    <select class="form-control" name="status" id="exampleFormControlSelect1">
-                    </select>
+                    <input class="form-control" type="text" value="{{ $data->Status }}" readonly>
                 </div>
+                
                 <div class="form-group">
                     <label for="exampleFormControlInput1">วันที่เข้าร่วมโครงการ</label>
-                    <input id="datepicker" name="register_date" width="300" value="" />
+                    <input id="datepicker" name="register_date" width="300" value="{{ $data->Register_date }}" />
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">วันที่ได้รับรางวัล</label>
-                    <input id="datepicker2" name="award_date" width="300" value="" />
+                    <input id="datepicker2" name="award_date" width="300" value="{{ $data->Award_date }}" />
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">รูปภาพ </label>
@@ -73,12 +70,24 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlFile1">URL วีดีโอ</label>
-                    <input type="text" name="vdo" class="form-control" id="vod" value="" required>
+                    <input type="text" name="vdo" class="form-control" id="vod" value="{{ $data->Vdo }}" required>
                 </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">ละติจูด</label>
+                    <input class="form-control" type="text" value="{{ $data->Latitude }}" readonly>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">ลองจิจูด</label>
+                    <input class="form-control" type="text" value="{{ $data->Longitude }}" readonly>
+                </div>
+                 
                 <hr>
                 <button type="submit" class="btn navbar-custom text-white"><i class="fas fa-share-square"></i> บันทึกข้อมูล </button>
                 <button type="reset" class="btn btn-warning"><i class="fas fa-trash-restore-alt"></i> รีเซต </button>
 
+                <a href="{{ asset('/map') }}"><button type="button" class="btn btn-danger float-right"><i class="fas fa-share-square"></i>  ยกเลิก</button></a>
             </form>
         </div>
     </div>
