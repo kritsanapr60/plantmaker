@@ -36,7 +36,7 @@ class AbtController extends Controller
                 'ระดับ [status] </b></p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-6">'.
-                '<img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg" alt="Smiley face" height="100" width="100">'.
+                '<img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg" alt="Smiley face" height="50%" width="50%">'.
             '</div>'.
         '</div>';
 
