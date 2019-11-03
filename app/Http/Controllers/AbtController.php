@@ -31,7 +31,7 @@ class AbtController extends Controller
         $contentString = 
         '<div id="content" class="form-group col-md-12 row">'.
             '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
-            '<div id="bodyContent" class="col-md-6">'.
+            '<div id="bodyContent" class="col-md-8">'.
                 '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
                 'ระดับ [status] </b></p>'.
             '</div>'.
@@ -85,12 +85,16 @@ class AbtController extends Controller
             }
             $abts = Abt::where('Province','=',$action)->get();
         }
-        $contentString = '<div id="content" class="form-group col-md-12">'.
-        '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
-        '<div id="bodyContent" class="col">'.
-        '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
-        'ระดับ [status] </b></p>'.
-        '</div>'.
+        $contentString = 
+        '<div id="content" class="form-group col-md-12 row">'.
+            '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
+            '<div id="bodyContent" class="col-md-8">'.
+                '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
+                'ระดับ [status] </b></p>'.
+            '</div>'.
+            '<div id="bodyContent" class="col-md-4">'.
+                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="150" width="150">'.
+            '</div>'.
         '</div>';
 
         $contentStrings = [];
