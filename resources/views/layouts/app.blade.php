@@ -45,12 +45,12 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 100px;
+            height: 110px;
             background-color: #a400d6;
             color: white;
             text-align: center;
             position: relative;
-            margin-top: -150px;
+            margin-top: -100px;
 
 
         }
