@@ -23,13 +23,13 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">จังหวัด</label>
                     <input class="form-control" type="text" value="{{ $data->Province }}" readonly>
-
                 </div>
+                
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ระดับ</label>
                     <input class="form-control" type="text" value="{{ $data->Status }}" readonly>
-
                 </div>
+                
                 <div class="form-group">
                     <label for="exampleFormControlInput1">วันที่เข้าร่วมโครงการ</label>
                     <input id="datepicker" name="register_date" width="300" value="{{ $data->Register_date }}" />
@@ -50,6 +50,17 @@
                     <label for="exampleFormControlFile1">URL วีดีโอ</label>
                     <input type="text" name="vdo" class="form-control" id="vod" value="" required>
                 </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">ละติจูด</label>
+                    <input class="form-control" type="text" value="{{ $data->Latitude }}" readonly>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">ลองจิจูด</label>
+                    <input class="form-control" type="text" value="{{ $data->Longitude }}" readonly>
+                </div>
+                 
                 <hr>
                 <button type="submit" class="btn navbar-custom text-white"><i class="fas fa-share-square"></i> บันทึกข้อมูล </button>
                 <button type="reset" class="btn btn-warning"><i class="fas fa-trash-restore-alt"></i> รีเซต </button>
