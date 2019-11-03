@@ -22,12 +22,12 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">จังหวัด</label>
-                    <input class="form-control" type="text" value="{{ $data->Province }}">
+                    <input class="form-control" type="text" value="{{ $data->Province }}" readonly>
 
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ระดับ</label>
-                    <input class="form-control" type="text" value="{{ $data->Status }}">
+                    <input class="form-control" type="text" value="{{ $data->Status }}" readonly>
 
                 </div>
                 <div class="form-group">
