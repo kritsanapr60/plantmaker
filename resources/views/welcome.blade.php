@@ -325,7 +325,7 @@
     })
 
     </script>
-    <link rel="stylesheet" href="{{ URL::asset('js/googlemap.js') }}" />
+    <link href="{{ URL::asset('js/googlemap.js') }}" />
     
     <script>
             function myFunction() {
