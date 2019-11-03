@@ -207,7 +207,7 @@
                                         </button>
                                       </div>
                                       <div class="modal-body">
-                                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/oIsQsAOoGSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe width="100%" height="500" src="{{$data -> Vdo}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
