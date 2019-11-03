@@ -31,6 +31,7 @@ class AbtController extends Controller
         $contentString = 
         '<div id="content" class="form-group col-md-12 row">'.
             '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
+            '<br>'.
             '<div id="bodyContent" class="col-md-6">'.
                 '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
                 'ระดับ [status] </b></p>'.
