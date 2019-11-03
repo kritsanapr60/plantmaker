@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/logout',function () {
+    return view('/map');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/test', 'TestController');
 Route::resource('/adduser', 'AdduserController');
