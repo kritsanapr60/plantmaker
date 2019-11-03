@@ -35,7 +35,25 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="col-md-3"></div>
+            <div class="col-md-9"><br><br>
+                    
+
+                        @if ($errors->any())
+                            <ul class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        @endif
+
+                        @include ('admin.user.formschool', ['formMode' => 'edit'])
+
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
-    <br><br><br><br><br><br>
 @endsection
