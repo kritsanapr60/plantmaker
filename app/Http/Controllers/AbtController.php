@@ -182,8 +182,8 @@ class AbtController extends Controller
         $Name_Image = array();
         if($files = $request->file('picture')){
             foreach ($files as $key => $file) {
-                $name = "Image_".$key.".".$file->getClientOriginalExtension();
-                $file->move(public_path('/image_school/'.$Name_School),$name);
+                $name = "img_".$Name_School."_".$key.".".$file->getClientOriginalExtension();
+                $file->move(public_path('/image_school/'),$name);
                 $Name_Image[$key] = $name;
             }
         }else {
