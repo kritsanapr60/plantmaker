@@ -36,10 +36,10 @@ class AbtController extends Controller
                 'ระดับ [status] </b></p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-6">'.
-                '<img src="/image_school/[nimg]" alt="Smiley face" height="200" width="150">'.
+                '<img src="{{asset(/image_school/[nimg])}}" alt="Smiley face" height="200" width="150">'.
             '</div>'.
         '</div>';
-
+        
         $contentStrings = [];
         foreach($abts as $abt){
             $resultString = str_replace('[place_name]', $abt->Name, $contentString);
