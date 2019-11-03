@@ -93,9 +93,6 @@
     <div class="collapse navbar-collapse" id="navbarsExample03">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ asset('/') }}">หน้าเเรก <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
         <a class="nav-link" href="{{ url('/get/โรงเรียน') }}" id="dropdown03"  aria-expanded="false">โรงเรียน</a>
         </li>
         <li class="nav-item">
