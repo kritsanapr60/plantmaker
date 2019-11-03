@@ -12,7 +12,7 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ชื่อ</label>
-                    <input type="text" name="name" class="form-control" id="schoolname" placeholder="{{ $data->Name }}" required>
+                    <input type="text" name="name" class="form-control" id="schoolname" value="{{ $data->Name }}" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ที่อยู่</label>
