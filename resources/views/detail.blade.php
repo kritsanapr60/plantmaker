@@ -167,7 +167,7 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('img_'.$data->Name.'_1.jpg') }}" alt="First slide" high="90">
+                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_1.jpg') }}" alt="First slide">
                           </div>
                           <div class="carousel-item">
                             <img class="d-block w-100" src="{{ asset('img/chicago.jpg') }}" alt="Second slide">
