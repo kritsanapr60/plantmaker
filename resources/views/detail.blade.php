@@ -51,6 +51,10 @@
             text-align: center;
             position: absolute;
         }
+        imgsize{
+            width: 1280px;
+            height: 583px;
+        }
     </style>
 </head>
 
@@ -176,34 +180,34 @@
                         <div class="carousel-inner">
                         
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_0.jpg') }}" alt="First slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_0.jpg') }}" alt="First slide">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_1.jpg') }}" alt="Second slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_1.jpg') }}" alt="Second slide">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_2.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_2.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_3.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_3.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_4.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_4.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_5.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_5.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_6.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_6.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_7.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_7.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_8.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_8.jpg') }}" alt="Third slide">
                           </div>
                            <div class="carousel-item">
-                            <img class="d-block w-100" src="{{ asset('image_school/img_'.$data->Name.'_9.jpg') }}" alt="Third slide">
+                            <img class="d-block w-100 imgsize" src="{{ asset('image_school/img_'.$data->Name.'_9.jpg') }}" alt="Third slide">
                           </div>
                           
                         </div>
