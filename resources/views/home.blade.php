@@ -32,11 +32,11 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">วันที่เข้าร่วมโครงการ</label>
-                    <input id="datepicker" name="register_date" width="300" value="" />
+                    <input id="datepicker" name="register_date" width="300" value="{{ $data->Register_date }}" />
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">วันที่ได้รับรางวัล</label>
-                    <input id="datepicker2" name="award_date" width="300" value="" />
+                    <input id="datepicker2" name="award_date" width="300" value="{{ $data->Award_date }}" />
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">รูปภาพ </label>
