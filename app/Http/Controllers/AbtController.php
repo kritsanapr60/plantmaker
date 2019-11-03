@@ -186,17 +186,6 @@ class AbtController extends Controller
                 $file->move(public_path('/image_school/'),$name);
                 $Name_Image[$key] = $name;
             }
-        }else {
-            $Name_Image[0] = "";
-            $Name_Image[1] = "";
-            $Name_Image[2] = "";
-            $Name_Image[3] = "";
-            $Name_Image[4] = "";
-            $Name_Image[5] = "";
-            $Name_Image[6] = "";
-            $Name_Image[7] = "";
-            $Name_Image[8] = "";
-            $Name_Image[9] = "";
         }
         \DB::table('abt')
             ->where('name',$Name_School)
