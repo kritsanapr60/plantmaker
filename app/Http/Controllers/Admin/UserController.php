@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Abt;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -82,8 +83,8 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::findOrFail($id);
-
-        return view('admin.user.edit', compact('user'));
+        $data = Abt::findOrFail($id);
+        return view('admin.user.edit', compact('user','data'));
     }
 
     /**
