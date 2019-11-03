@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use AuthenticatesUsers {
+    logout as performLogout;
+}
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -57,4 +60,9 @@ class LoginController extends Controller
     {
         return 'username';
     }
+    public function logout(Request $request)
+{
+    $this->performLogout($request);
+    return redirect()->route('/map');
+}
 }
