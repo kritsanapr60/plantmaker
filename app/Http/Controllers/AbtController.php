@@ -28,14 +28,14 @@ class AbtController extends Controller
         $zoom = 9;
 
         $abts = Abt::all();
-        $contentString = '<div id="content" class="form-group col-md-7">'.
+        $contentString = '<div id="content" class="form-group col-md-12">'.
         '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
-        '<div id="bodyContent" class="col">'.
+        '<div id="bodyContent" class="col-md-6">'.
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
-        '</div>'.
         '</div>'.  
-        '<div class="form-group col-md-5">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
+        '<div class="form-group col-md-6">'.'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="Smiley face" width="42" height="42">'.
+        '</div>'.
         '</div>';
 
         $contentStrings = [];
