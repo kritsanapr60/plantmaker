@@ -326,7 +326,7 @@
   </script>
       
     <script async defer
-    src="{{ URL::asset('apikey.js') }}">
+    src="{{ URL::asset('js/apikey.js') }}">
     </script>
     <script>
             function myFunction() {
