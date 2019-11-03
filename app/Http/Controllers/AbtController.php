@@ -28,12 +28,11 @@ class AbtController extends Controller
         $zoom = 9;
 
         $abts = Abt::all();
-        $contentString = '<div id="content" class="from group row">'.
-        '<div id="bodyContent" class="col-md-8">'.
+        $contentString = '<div id="content" class="form-group col-md-12">'.
+        '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
+        '<div id="bodyContent" class="col">'.
         '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
         'ระดับ [status] </b></p>'.
-        '</div>'.  
-        '<div class="col-md-4">'.'<img src="{{ asset('image_school/img_[nimg]_0.jpg') }}" alt="Smiley face" width="42" height="42">'.
         '</div>'.
         '</div>';
 
