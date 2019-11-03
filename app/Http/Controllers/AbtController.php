@@ -36,7 +36,7 @@ class AbtController extends Controller
                 'ระดับ [status] </b></p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-6">'.
-                .'<img src="smiley.gif" alt="Smiley face" height="42" width="42">'.
+                '<img src="smiley.gif" alt="Smiley face" height="42" width="42">'.
             '</div>'.
         '</div>';
 
