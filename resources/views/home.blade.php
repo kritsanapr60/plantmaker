@@ -16,7 +16,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ที่อยู่</label>
-                    <input type="text" name="address" class="form-control" id="address" value="" required>
+                    <input type="text" name="address" class="form-control" id="address" value="{{ $data->Address }}" required>
                 </div>
 
 
