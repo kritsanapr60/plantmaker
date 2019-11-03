@@ -44,12 +44,12 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">จังหวัด</label>
-                    <input class="form-control" type="text" value="{{ $data->Province }}" readonly>
+                    <input class="form-control" type="text" value="{{ $data->Province }}">
                 </div>
                 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ระดับ</label>
-                    <input class="form-control" type="text" value="{{ $data->Status }}" readonly>
+                    <input class="form-control" type="text" value="{{ $data->Status }}">
                 </div>
                 
                 <div class="form-group">
@@ -75,12 +75,12 @@
                 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ละติจูด</label>
-                    <input class="form-control" type="text" value="{{ $data->Latitude }}" readonly>
+                    <input class="form-control" type="text" value="{{ $data->Latitude }}" >
                 </div>
                 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">ลองจิจูด</label>
-                    <input class="form-control" type="text" value="{{ $data->Longitude }}" readonly>
+                    <input class="form-control" type="text" value="{{ $data->Longitude }}" >
                 </div>
                  
                 <hr>
