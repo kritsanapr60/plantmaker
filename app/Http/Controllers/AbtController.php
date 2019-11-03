@@ -33,8 +33,8 @@ class AbtController extends Controller
             '<a href="/~plant/plantmaker/public/detail/[place_name]"><h1 id="firstHeading" class="firstHeading">[place_name]</h1></a>'.
             '<br>'.
             '<div id="bodyContent" class="col-md-6">'.
-                '<p><b>[place_name]</b><br> ที่อยู่ [address] จังหวัด [province]<br>'.
-                'ระดับ [status] </b></p>'.
+                '<p><h5>[place_name]</h5><br> ที่อยู่: [address] จังหวัด+[province]<br>'.
+                'ระดับ: [status]</p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-4">'.
                 '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="230" width="300">'.
