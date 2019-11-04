@@ -37,7 +37,7 @@ class AbtController extends Controller
                 'ระดับ: [status]</p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-4">'.
-                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="ไม่พบรูปภาพในระบบ" height="230" width="300">'.
+                '<center><img src="/~plant/plantmaker/public/image_school/[nimg] " alt="ไม่พบรูปภาพในระบบ" height="230" width="300"></center'>.
             '</div>'.
         '</div>';
         
@@ -95,7 +95,7 @@ class AbtController extends Controller
                 'ระดับ: [status]</p>'.
             '</div>'.
             '<div id="bodyContent" class="col-md-4">'.
-                '<img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="230" width="300">'.
+                '<center><img src="/~plant/plantmaker/public/image_school/[nimg] " alt="Smiley face" height="230" width="300"></center>'.
             '</div>'.
         '</div>';
 
