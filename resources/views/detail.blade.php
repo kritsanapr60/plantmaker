@@ -266,7 +266,8 @@
              <hr width="35%">
         </p>
     </div>
-    </>
+    </div>
+    
     <script>
             function standby() {
             document.getElementById('foo1').src = "{{ asset('img/NoImageFound.jpg.png') }}"
