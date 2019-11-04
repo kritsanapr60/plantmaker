@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('title', 'สร้างบัญชีผู้ใช้งานงาน')
 @section('content')
+<style>
+    body {
+        overflow-y: hidden;
+    }
+</style>
     <div class="container">
         <div class="row">
             @include('admin.sidebar')
