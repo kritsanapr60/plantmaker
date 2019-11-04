@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'ข้อมูล User ทั้งหมด')
 @section('content')
 <style>
  #button{
