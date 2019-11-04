@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'สร้างบัญชีผู้ใช้งานงาน')
 @section('content')
     <div class="container">
         <div class="row">
