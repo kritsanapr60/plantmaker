@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','แก้ไขข้อมูล {{ $user->id }}')
 @section('content')
     <div class="container">
         <div class="row">
