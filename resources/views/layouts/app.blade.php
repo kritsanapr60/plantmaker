@@ -59,13 +59,16 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
         <img src="{{ asset('img/logo.gif') }}" alt="" width="30" height="35"> &nbsp;
-        <a href="{{ url('/map') }}" class="navbar-brand" style="color:white;">UBONRATCHATANI </a>
+        <a href="{{ url('/map') }}" class="navbar-brand" style="color:white;">แผนที่แสดงตำแหน่งหน่วยงานร่วมสนองพระราชดำริโครงการอนุรักษ์พันธุกรรมพืชอันเนื่องมาจากพระราชดำริฯ </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/') }}">หน้าเเรก <span class="sr-only">(current)</span></a>
+                          </li>
                 <form class="form-inline my-2 my-lg-0">
                     @guest
                 <a href="{{ url('/login') }}" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
