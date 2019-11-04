@@ -74,7 +74,7 @@
 
                 <form class="form-inline my-2 my-lg-0">
                     @guest
-                        <a href="/login" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
+                        <a href="{{ url('/login') }}" class="btn btn-warning" type="buton"><i class='fas fa-sign-in-alt'></i>  เข้าสู่ระบบ</a>
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li> --}}
