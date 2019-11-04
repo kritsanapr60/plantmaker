@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>{{ Auth::user()->name }}</title>
+    <title>@yield('title')</title>
     <meta charset="UTF-8">
 <link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>API UBU</title>
     <link rel="shortcut icon" href="img/logo.gif" />
 
@@ -49,12 +49,12 @@
             background-color: #a400d6;
             color: white;
             text-align: center;
+            position: absolute;
         }
         .imgsize{
             width: 720px;
             height: 480px;
         }
-        
     </style>
 </head>
 
@@ -90,16 +90,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                @if (Auth::user()->hasRole('super-admin')) 
-                                    <a class="dropdown-item" href="{{ asset('admin/user') }}">
-                                        <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
-                                    </a>
-
-                                @else 
-                                    <a class="dropdown-item" href="{{ asset('/home') }}">
-                                        <i class="fas fa-user-edit"></i> เเก้ไขข้อมูล
-                                    </a>
-                                 @endif
+                                <a class="dropdown-item" href="{{ url('/home') }}">
+                                         แก้ไขข้อมูล
+                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -263,7 +256,6 @@
 
             </div>
             <hr>
-            </div>
     <div class="footer">
         <br>
         <p>
@@ -274,6 +266,7 @@
              <hr width="35%">
         </p>
     </div>
+    </>
     <script>
             function standby() {
             document.getElementById('foo1').src = "{{ asset('img/NoImageFound.jpg.png') }}"

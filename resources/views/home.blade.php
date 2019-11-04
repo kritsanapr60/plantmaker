@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','แก้ไขข้อมูล' )
+@section('title','Home')
 
 @section('content')
 {{-- {{ $data }} --}}
