@@ -3,10 +3,10 @@
 <head>
     <title>@yield('title')</title>
     <meta charset="UTF-8">
-<link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
+    <link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
+    <meta name="viewport" content="width=device-width,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>API UBU</title>
     <link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
 
@@ -49,9 +49,6 @@
             background-color: #a400d6;
             color: white;
             text-align: center;
-            /* position: absolute; */
-
-
         }
     </style>
 </head>
@@ -162,7 +159,6 @@
             สมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี
             <br>
              มหาวิทยาลัยอุบลราชธานี โทร 045-353035
-             <hr width="35%">
         </p>
     </div>
     <!-- js -->
