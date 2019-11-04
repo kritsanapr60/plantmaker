@@ -84,7 +84,7 @@
     <body>
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-custom">
     <img src="{{ asset('img/logo.gif') }}" alt="" width="30" height="35"> &nbsp;
-    <a class="navbar-brand" href="{{ url('/map') }}">UBONRATCHATHANI </a>
+    <a class="navbar-brand" href="{{ url('/map') }}">แผนที่แสดงตำแหน่งหน่วยงานร่วมสนองพระราชดำริโครงการอนุรักษ์พันธุกรรมพืชอันเนื่องมาจากพระราชดำริฯ </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
     aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
