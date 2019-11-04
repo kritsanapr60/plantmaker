@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>@yield('title')</title>
+    <title>{{$data -> Name}}</title>
     <meta charset="UTF-8">
 <link rel="shortcut icon" href="{{ asset('img/logo.gif') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
